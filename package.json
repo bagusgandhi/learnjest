@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "serve": "node app.js",
-    "test": "jest"
+    "test": "node --experimental-vm-modules node_modules/.bin/jest --coverage"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +14,8 @@
     "express": "^4.17.2"
   },
   "devDependencies": {
-    "jest": "^27.4.5"
+    "jest": "^27.4.5",
+    "supertest": "^6.1.6"
   },
   "type": "module"
 }
